@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #23406d;
+    color: white;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #0b2b40;
+    padding: 20px 0;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.hero-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-text button {
+    background-color: #5AAE49;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.hero-image img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.technologies {
+    padding: 50px 0;
+}
+
+.technologies h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.tech-logos {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 100px;
+}
+
+.tech-logos img {
+    height: auto;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #0b2b40;
+    color: #ccc;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+    
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
