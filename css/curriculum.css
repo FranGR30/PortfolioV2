@@ -1,0 +1,355 @@
+/* estilos generales */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #204060;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 10px 20px; /* Espacio de 20px a cada lado */
+}
+
+nav {
+    background-color: #203040;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px 0;
+    margin: 0 20px; /* Espacio de 20px a cada lado */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1; /* Cada ítem ocupará un espacio igual */
+    text-align: center; /* Centrar el texto dentro de cada ítem */
+}
+
+nav ul li a {
+    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
+    padding: 10px 0; /* Añadir padding para un mejor área clicable */
+    color: lightgray;
+    opacity: 0.6;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 100ms;
+}
+
+.actual{
+    color: white;
+    opacity: 1;
+}
+
+nav ul li a:hover{
+    color: white;
+    opacity: 1;
+    scale: 1.1;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.curriculum {
+    text-align: center;
+}
+
+.curriculum h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section .subtitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #204060;
+    background-color: lightgray;
+    padding: 10px 20px; /* Añadir padding para dar espacio interno */
+    border-radius: 15px;
+    margin: 0 20px; /* Añadir margen para separar del borde del contenedor */
+}
+
+.section h2 .icon {
+    margin-right: 10px;
+}
+
+.experience, .education, .courses, .certifications, .skills-technical, .skills-soft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experience, .education, .courses {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna para que queden uno debajo del otro */
+    align-items: center; /* Centrar los elementos horizontalmente, opcional */
+    gap: 20px; /* Espacio entre elementos, opcional */
+}
+
+.job, .school, .course, .certification {
+    border: 1px solid transparent; /* Asegúrate de que el borde inicial sea transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    width: calc(50% - 0px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: linear-gradient(#204060, #204060), linear-gradient(to right, #89D99D, rgba(137, 217, 157, 0));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    position: relative;
+}
+
+.job, .school, .course{
+    align-items: flex-start; /* Alinea todos los hijos arriba verticalmente */
+}
+
+.job img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.jobDuration, .education-duration, .course-duration {
+    font-size: x-small;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 10px; /* Añadir espacio interno */
+    text-align: right;
+}
+
+.jobDuration {
+    font-size: x-small;
+    display: flex;
+    justify-content: flex-end; /* Alinea a la derecha horizontalmente */
+    align-items: flex-start;   /* Alinea arriba verticalmente */
+    flex-grow: 1; /* Permite que este div crezca y ocupe espacio sobrante */
+    text-align: right; /* Para el contenido interno, por si es necesario */
+    max-width: 100px; /* Opcional, establece un ancho máximo si quieres limitar el crecimiento */
+}
+
+.certification {
+    flex-direction: column;
+    max-width: 200px;
+    background-image: linear-gradient(#204060, #204060), linear-gradient(to top, #89D99D, rgba(137, 217, 157, 0));
+}
+
+
+.job img, .school img, .course img, .certification img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.job-details, .school-details, .course-details {
+    text-align: left;
+    padding: 10px;
+    max-width: 60%;
+}
+
+.job-details h3, .school-details h3, .course-details h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.job-details span, .school-details span, .course-details span {
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+.job-details ul, .school-details ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.job-details ul li, .school-details ul li {
+    margin-bottom: 5px;
+}
+
+.skills-technical {
+    display: flex;
+}
+
+.skills-technical div {
+    width: calc(100% / 7);
+}
+
+.skills-technical img, .skills-soft img {
+    height: 50px;
+    margin: 10px;
+}
+
+.skills-soft {
+    display: flex;
+}
+
+.skills-soft div {
+    width: calc(100% / 6);
+}
+
+.pdf-download img {
+    width: 200px;
+    height: 200px;
+    transition-duration: 100ms;
+}
+
+.pdf-download img:hover{
+    scale: 1.1
+}
+
+footer {
+    background-color: #203040;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .social-icons {
+    display: flex;
+    margin-left: auto;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer .social-icons img {
+    max-width: 24px;
+}
+
+@media (max-width: 400px) {
+    header {
+        padding: 10px 10px; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    nav {
+        margin: 0 10px; /* Reducir el margen en pantallas pequeñas */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    }
+
+    nav ul li {
+        flex: 1 1 50%; /* Hacer que cada elemento ocupe el 50% del ancho */
+    }
+
+    .curriculum h1 {
+        font-size: 2em;
+    }
+
+    .section h2 {
+        font-size: 1.2em;
+        margin: 0 10px; /* Ajustar el margen en pantallas pequeñas */
+    }
+
+    .job, .school, .course, .certification {
+        align-items: flex-start;
+        font-size: small;
+        width: 100%;
+    }
+
+    .certifications {
+        display: flex;
+        
+    }
+
+    .certification {
+        display: flex;
+        align-items: center;
+        width: calc(100% / 3);
+    }
+
+    .certification img{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .job img, .school img, .course img, .certification img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+
+    .skills-technical div {
+        display: flex;
+       flex-direction: column;
+        align-items: center;
+        width: calc(100% / 3);
+    }
+
+    .skills-soft div {
+        display: flex;
+       flex-direction: column;
+        align-items: center;
+        width: calc(100% / 3);
+    }
+
+    .skills-technical, .skills-soft {
+        display: flex;
+        align-items: center;
+    }
+
+    .skills-technical img, .skills-soft img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .pdf-download img {
+        width: 150px;
+        height: 150px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        position: static;
+        transform: none;
+    }
+
+    footer .social-icons {
+        margin-top: 10px;
+    }
+}

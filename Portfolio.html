@@ -1,188 +1,125 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Francisco&#39;s Application1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" /> <img />
-    alt="Logo"
-    src="https://appproject.dhiwise.com/dhiwise-logo.png?c=&v=" style="width: 0px; height: 0px; display: none"
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font.css" />
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./css/components.css" />
-    <link rel="stylesheet" type="text/css" href="./css/Portfolio.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional</title>
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
 
 <body>
-    <div class="portfolio">
-        <header class="navbar">
-            <ul class="rowinicio">
-                <li>
-                    <a href="#">
-                        |<p class="inicio ui text size-textlg">Inicio</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p class="inicio ui text size-textlg">Curriculum</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p class="inicio ui text size-textlg">Portfolio</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p class="inicio ui text size-textlg">Testimonios</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p class="inicio ui text size-textlg">Servicios</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p class="inicio ui text size-text1g">Contacto</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p class="inicio ui text size-textlg">Sobre Mi</p>
-                    </a>
-                </li>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="portfolio.html" class="actual">Portfolio</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre_mi.html">Sobre Mi</a></li>
             </ul>
-        </header>
-        <div class="columnbacktrack">
-            <div class="columnportfolio container-xs">
-                | <h1 class="portfolio_one ui heading size-heading3x1">Portfolio</h1>
-            </div>
-            <div class="portfolio-1">
-                <div class="work">
-                    <img src="public/images/img_imagen.png" alt="Image" class="image" />
-                    <div class="columnbacktrack-1">
-                        <h2 class="backtracking ui heading size-headingmd">Backtracking Gen Implementation</h2>
-                        <p class="description ui text size-textlg">
-                            Implementación en java de algoritmos de backtracking utilizando diferentes metodos de poda y
-                            comparando la complejidad temporal de la implementacion
-                        </p>
-                        <div class="rowsaber_ms">
-                            <button class="saber_ms ui button blue_gray_800 size-xs fill round">
-                                <span> Saber más</span>
-                                <div class="right-icon-wrapper">
-                                    <img src="public/images/img_arrowright.svg" alt="Arrow Right" class="arrow_right" />
-                                </div>
-                            </button>
-                            <div class="row">
-                                <img src="public/images/img_image_18.png" alt="Imageeighteen" class="imageeighteen" />
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <h1>Portfolio</h1>
+            <div class="projects">
+                <div class="project">
+                    <img src="images/backtracking.png" alt="Backtracking Gen Implementation">
+                    <div class="project-details">
+                        <h2>Backtracking Gen Implementation</h2>
+                        <p>Implementación en java de algoritmos de backtracking utilizando diferentes métodos de poda y
+                            comparando la complejidad temporal de la implementación</p>
+                        <div class="button_tech">
+                            <button><a href="https://github.com/FranGR30/BacktrackingGen" target="_blank">Saber más ></a></button>
+                            <div class="tech-icons">
+                                <img src="images/javaIconPortfolio.png" alt="Java">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project">
+                    <img src="images/mobileapp.png" alt="App mobile inmobiliaria">
+                    <div class="project-details">
+                        <h2>App mobile inmobiliaria</h2>
+                        <p>Implementación back-end de una app mobile para compra/alquiler de inmuebles</p>
+                        <div class="button_tech">
+                            <button><a href="https://github.com/FranGR30/aplicacionesDistribuidas-backEnd"
+                                    target="_blank">Saber más ></a></button>
+                            <div class="tech-icons">
+                                <img src="images/icon-javscript.svg" alt="JavaScript">
+                                <img src="images/icon-react.svg" alt="React">
+                                <img src="images/icon-nodejs.svg" alt="Node.js">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="public/images/img_imagen.png" alt="Image" class="image" />
-                    <div class="columnbacktrack-1">
-                        <h3 class="backtracking ui heading size-headingmd">Backtracking Gen Implementation</h3>
-                        <p class="description ui text size-textlg">
-                            Implementación en java de algoritmos de backtracking utilizando diferentes metodos de poda y
-                            comparando la complejidad temporal de la implementacion
-                        </p>
-                        <div class="rowsaber_ms">
-                            <button class="saber_ms ui button blue_gray_800 size-xs fill round">
-                                <span> Saber más</span>
-                                <div class="right-icon-wrapper">
-                                    <img src="public/images/img_arrowright.svg" alt="Arrow Right" class="arrow_right" />
-                                </div>
-                            </button>
-                            <div class="row-1">
-                                <img src="public/images/img_image_18.png" alt="Imageeighteen" class="imageeighteen" />
+                <div class="project">
+                    <img src="images/vet.png" alt="GudBoy Veterinaria">
+                    <div class="project-details">
+                        <h2>GudBoy Veterinaria</h2>
+                        <p>Implementación back-end en java de una veterinaria aplicando patrones de diseño como strategy
+                            y adapter</p>
+                        <div class="button_tech">
+                            <button><a href="https://github.com/FranGR30/BackEndVeterinaria" target="_blank">Saber más
+                                    ></a></button>
+                            <div class="tech-icons">
+                                <img src="images/javaIconPortfolio.png" alt="Java">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project">
+                    <img src="images/dondeComemos.png" alt="Blog Restaurante">
+                    <div class="project-details">
+                        <h2>Blog Restaurante</h2>
+                        <p>Blog de reseñas de restaurantes</p>
+                        <div class="button_tech">
+                            <button><a href="https://github.com/FranGR30/blogRestaurante" target="_blank">Saber más
+                                    ></a></button>
+                            <div class="tech-icons">
+                                <img src="images/python-icon.png" alt="Python">
+                                <img src="images/django-icon.png" alt="Django">
+                                <img src="images/mongoDB-icon.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="public/images/img_imagen.png" alt="Image" class="image" />
-                    <div class="columnbacktrack-1">
-                        <h4 class="backtracking ui heading size-headingmd">GudBoy Veterinaria</h4>
-                        <p class="description ui text size-textlg">
-                            Implementación back-end en java de una veterinaria aplicando patrones de diseño como
-                            strategy y adapter
-                        </p>
-                        <div class="rowsaber_ms">
-                            <button class="saber_ms ui button blue_gray_800 size-xs fill round">
-                                <span> Saber más</span>
-                                <div class="right-icon-wrapper">
-                                    <img src="public/images/img_arrowright.svg" alt="Arrow Right" class="arrow_right" />
-                                </div>
-                            </button>
-                            <div class="row-1">
-                                <img src="public/images/img_image_18.png" alt="Imageeighteen" class="imageeighteen" />
+                <div class="project">
+                    <img src="images/granja.png" alt="Granja Gallinas">
+                    <div class="project-details">
+                        <h2>Granja Gallinas</h2>
+                        <p>Proyecto de implementación de una granja de gallinas en el cual las gallinas pueden ser
+                            compradas, vendidas, pueden tener huevos y morir</p>
+                        <div class="button_tech">
+                            <button><a href="https://github.com/FranGR30/GranjaGallinas" target="_blank">Saber más
+                                    ></a></button>
+                            <div class="tech-icons">
+                                <img src="images/springBoot-icon.png" alt="Spring">
+                                <img src="images/tl-icon.png" alt="Angular">
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="work-3">
-                    <img src="public/images/img_imagen.png" alt="Image" class="image" />
-                    <div class="columnbacktrack-1">
-                        <h6 class="backtracking-3 ui heading size-headingmd">Backtracking Gen Implementation</h6>
-                        <p class="description ui text size-textlg">
-                            Implementación en java de algoritmos de backtracking utilizando diferentes metodos de poda y
-                            comparando la complejidad temporal de la implementacion
-                        </p>
-                        <div class="rowsaber_ms">
-                            <button class="saber_ms ui button blue_gray_800 size-xs fill round">
-                                <span> Saber más</span>
-                                <div class="right-icon-wrapper">
-                                    <img src="public/images/img_arrowright.svg" alt="Arrow Right" class="arrow_right" />
-                                </div>
-                            </button>
-                            <div class="row-1">
-                                <img src="public/images/img_image_18.png" alt="Imageeighteen" class="imageeighteen" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="work-4">
-                    <img src="public/images/img_imagen.png" alt="Image" class="image" <div class="columnbacktrack-1">
-                    <h6 class="backtracking-3 ui heading size-headingmd">Backtracking Gen Implementation</h6>
-                    <p class="description ui text size-textlg">
-                        Implementación en java de algoritmos de backtracking utilizando diferentes metodos de poda y
-                        comparando la complejidad temporal de la implementacion
-                    </p>
-                    <div class="rowsaber_ms">
-                        <button class="saber_ms ui button blue_gray_800 size-xs fill round">
-                            <span> Saber más</span>
-                            <div class="right-icon-wrapper">
-                                <img src="public/images/img_arrowright.svg" alt="Arrow Right" class="arrow_right" />
-                            </div>
-                        </button>
-                        <div class="row-1">
-                            <img src="public/images/img_image_18.png" alt="Imageeighteen" class="imageeighteen" />
-                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <footer class="footerui">
-        <div class="columnlinetwo">
-            <div class="linetwo_one"></div>
-            <div class="social">
-                <p class="class-2019bostelllc ui text size-textxs' 2024 Mi Portafolio Profesional" </p>
-                <div class="rowlink_one">
-                    <img src="public/images/img_link.svg" alt="Link" class="link_one" />
-                    <img src="public/images/img_social_icons.svg" alt="Socialicons" class="link_one" />
-                    <img src="public/images/img_social_icons_white_a700.svg" alt="Socialicons" class="link_one" /> <img
-                        src="public/images/img_volume.svg" alt="Volume" class="link_one" />
-                </div>
-            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Portafolio Profesional</p>
+        <div class="social-icons">
+            <a href="#"><img src="images/LinkedInFooter.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="images/GoogeFooter.svg" alt="Google"></a>
+            <a href="#"><img src="images/DiscordFooter.svg" alt="Discord"></a>
+            <a href="#"><img src="images/WhatsAppFooter.svg" alt="WhatsApp"></a>
         </div>
     </footer>
-    </div>
 </body>
 
 </html>

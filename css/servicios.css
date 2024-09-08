@@ -41,6 +41,7 @@ nav ul li {
     text-align: center;
 }
 
+
 nav ul li a {
     display: block; /* Hacer que el enlace ocupe todo el espacio del li */
     padding: 10px 0; /* Añadir padding para un mejor área clicable */
@@ -69,78 +70,49 @@ main {
 }
 
 .intro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin: 20px 0;
 }
 
-.intro .text {
-    text-align: left;
-    max-width: 500px;
-    margin-right: 20px;
+.intro h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
 }
 
-.intro .image img {
-    border-radius: 50%;
-    max-width: 300px;
-    width: 100%;
-}
-
-button {
-    background-color: #28a745;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition-duration: 100ms;
-}
-
-button:hover {
-    background-color: #218838;
-    scale: 1.1;
-    box-shadow: 0 0 10px #218838;
-}
-
-.skills {
-    text-align: left;
-    margin: 40px 0;
-}
-
-.skills h2 {
-    left: 200px;
-}
-
-.skills .logos {
+.services {
     display: flex;
-    justify-content: left;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.skills .logos div {
-    width: calc(100px/5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    height: 100px;
+.service {
+    border-radius: 15px;
     margin: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     border: 1px solid transparent; /* Establecer un borde inicial transparente */
     border-radius: 10px; /* Bordes redondeados opcionales */
-    background-image: linear-gradient(#204060, #204060), linear-gradient(to right, #89D99D,#3B8C6E,#38886C,  #204060); /* Degradado y color de fondo */
+    background-image: linear-gradient(#204060, #204060), linear-gradient(to top, #89D99D,#3B8C6E,#38886C,  #204060); /* Degradado y color de fondo */
     background-origin: border-box; /* El degradado se origina en el borde */
     background-clip: content-box, border-box; /* Clip del degradado al borde */
-
 }
 
-.skills .logos img {
-    object-fit: contain;
+.service img {
+    max-width: 80px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
-    
+
+.service h3 {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.service p {
+    padding: 10px;
+}
 
 footer {
     background-color: #203040;
@@ -172,6 +144,18 @@ footer .social-icons img {
     max-width: 24px;
 }
 
+@media (max-width: 1000px) {
+    .service {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    .service {
+        flex: 1 1 100%;
+    }
+}
+
 @media (max-width: 400px) {
     header {
         padding: 10px 10px; /* Reducir el padding en pantallas pequeñas */
@@ -190,30 +174,10 @@ footer .social-icons img {
 
     .intro {
         margin: 10px 0;
-        flex-direction: column-reverse;
-    }
-
-    .intro .text {
-        text-align: center;
-    }
-
-    .intro .image img {
-        max-width: 150px; /* Ajustar el tamaño de la imagen */
-        margin-top: 10px;
     }
 
     .skills {
         margin: 20px 10px; /* Ajustar el margen en pantallas pequeñas */
-    }
-
-    .skills .logos {
-        flex-direction: column; /* Cambiar la dirección a columna */
-        align-items: center;
-    }
-
-    .skills .logos div {
-        width: 100%;
-        margin: 10px 0; /* Espaciado vertical entre logos */
     }
 
     footer {

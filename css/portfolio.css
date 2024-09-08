@@ -1,0 +1,273 @@
+/* estilos generales */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #204060;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 10px 20px; /* Espacio de 20px a cada lado */
+}
+
+nav {
+    background-color: #203040;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px 0;
+    margin: 0 20px; /* Espacio de 20px a cada lado */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1; /* Cada ítem ocupará un espacio igual */
+    text-align: center; /* Centrar el texto dentro de cada ítem */
+}
+
+nav ul li a {
+    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
+    padding: 10px 0; /* Añadir padding para un mejor área clicable */
+    color: lightgray;
+    opacity: 0.6;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 100ms;
+}
+
+.actual{
+    color: white;
+    opacity: 1;
+}
+
+nav ul li a:hover{
+    color: white;
+    opacity: 1;
+    scale: 1.1;
+}
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.project {
+    background-color: #3c6e71;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(33% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-details h2 {
+    font-size: 1.2em;
+    margin: 0;
+    
+}
+
+.project-details p {
+    flex: 1;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.project-details button {
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 100ms;
+}
+
+.project-details button:hover {
+    background-color: #218838;
+    scale: 1.1;
+    box-shadow: 0 0 10px #218838;
+}
+
+.button_tech {
+    display: flex;
+}
+
+.button_tech button {
+    width: calc(100% / 2);
+}
+
+.button_tech button a {
+    text-decoration: none;
+    color: white;
+}
+
+.tech-icons {
+    width: calc(100% / 2);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.tech-icons img {
+    object-fit: contain;
+}
+
+.tech-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    background-color: #203040;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .social-icons {
+    display: flex;
+    margin-left: auto;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer .social-icons img {
+    max-width: 24px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer p {
+        position: static;
+        transform: none;
+    }
+
+    footer .social-icons {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        padding: 10px 10px; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    nav {
+        margin: 0 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    }
+
+    nav ul li {
+        flex: 1 1 50%; /* Hacer que cada elemento ocupe el 50% del ancho */
+    }
+
+    .project {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 10px 0; /* Espacio vertical entre proyectos */
+    }
+
+    .project img {
+        height: auto; /* Ajustar la altura automáticamente */
+    }
+
+    .project-details {
+        padding: 10px; /* Reducir el padding interno */
+    }
+
+    .tech-icons {
+        justify-content: center; /* Centrar los íconos en pantallas pequeñas */
+        position: static; /* Eliminar la posición absoluta */
+        margin: 10px 0 0; /* Espacio encima de los íconos */
+    }
+
+    .tech-icons img {
+        width: 24px; /* Ajustar el tamaño de los íconos */
+        height: 24px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        position: static;
+        transform: none;
+    }
+
+    footer .social-icons {
+        margin-top: 10px;
+    }
+}

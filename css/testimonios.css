@@ -69,66 +69,29 @@ main {
 }
 
 .intro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin: 20px 0;
 }
 
-.intro .text {
-    text-align: left;
-    max-width: 500px;
-    margin-right: 20px;
+.intro h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
 }
 
-.intro .image img {
-    border-radius: 50%;
-    max-width: 300px;
-    width: 100%;
-}
-
-button {
-    background-color: #28a745;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition-duration: 100ms;
-}
-
-button:hover {
-    background-color: #218838;
-    scale: 1.1;
-    box-shadow: 0 0 10px #218838;
-}
-
-.skills {
-    text-align: left;
-    margin: 40px 0;
-}
-
-.skills h2 {
-    left: 200px;
-}
-
-.skills .logos {
+.testimonials {
     display: flex;
-    justify-content: left;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.skills .logos div {
-    width: calc(100px/5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    height: 100px;
+.testimonial {
+    border-radius: 15px;
     margin: 10px;
+    flex: 1 1 calc(50% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    position: relative;
     border: 1px solid transparent; /* Establecer un borde inicial transparente */
     border-radius: 10px; /* Bordes redondeados opcionales */
     background-image: linear-gradient(#204060, #204060), linear-gradient(to right, #89D99D,#3B8C6E,#38886C,  #204060); /* Degradado y color de fondo */
@@ -137,10 +100,37 @@ button:hover {
 
 }
 
-.skills .logos img {
-    object-fit: contain;
+.testimonial blockquote {
+    position: relative;
+    padding-left: 40px; /* Espacio para la comilla inicial */
 }
-    
+
+.testimonial blockquote::before {
+    content: '“';
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+
+.testimonial div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonial div cite {
+    color: white;
+    font-weight: bold;
+}
 
 footer {
     background-color: #203040;
@@ -172,7 +162,13 @@ footer .social-icons img {
     max-width: 24px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
+    .testimonial {
+        flex: 1 1 calc(100% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
     header {
         padding: 10px 10px; /* Reducir el padding en pantallas pequeñas */
     }
@@ -180,6 +176,7 @@ footer .social-icons img {
     nav {
         margin: 0 10px; /* Reducir el margen en pantallas pequeñas */
     }
+
     nav ul {
         flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
     }
@@ -190,30 +187,10 @@ footer .social-icons img {
 
     .intro {
         margin: 10px 0;
-        flex-direction: column-reverse;
-    }
-
-    .intro .text {
-        text-align: center;
-    }
-
-    .intro .image img {
-        max-width: 150px; /* Ajustar el tamaño de la imagen */
-        margin-top: 10px;
     }
 
     .skills {
         margin: 20px 10px; /* Ajustar el margen en pantallas pequeñas */
-    }
-
-    .skills .logos {
-        flex-direction: column; /* Cambiar la dirección a columna */
-        align-items: center;
-    }
-
-    .skills .logos div {
-        width: 100%;
-        margin: 10px 0; /* Espaciado vertical entre logos */
     }
 
     footer {

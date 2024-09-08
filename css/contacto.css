@@ -24,7 +24,6 @@ nav {
     background-color: #203040;
     border-radius: 15px; 
     padding: 20px 0;
-    margin: 0 0px; 
 }
 
 nav ul {
@@ -42,8 +41,8 @@ nav ul li {
 }
 
 nav ul li a {
-    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
-    padding: 10px 0; /* Añadir padding para un mejor área clicable */
+    display: block;
+    padding: 10px 0;
     color: lightgray;
     opacity: 0.6;
     text-decoration: none;
@@ -51,12 +50,12 @@ nav ul li a {
     transition-duration: 100ms;
 }
 
-.actual{
+.actual {
     color: white;
     opacity: 1;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: white;
     opacity: 1;
     scale: 1.1;
@@ -68,24 +67,39 @@ main {
     flex: 1;
 }
 
-.intro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.intro .text {
-    text-align: left;
+.contact {
     max-width: 500px;
-    margin-right: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
-.intro .image img {
-    border-radius: 50%;
-    max-width: 300px;
+.contact h1 {
+    margin-bottom: 20px;
     width: 100%;
+    font-size: 2.5em;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact input, 
+.contact textarea {
+    max-width: 500px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.contact textarea {
+    resize: none;
+    height: 100px;
 }
 
 button {
@@ -96,7 +110,7 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px;
+    width: calc(100% / 2);
     transition-duration: 100ms;
 }
 
@@ -106,41 +120,48 @@ button:hover {
     box-shadow: 0 0 10px #218838;
 }
 
-.skills {
-    text-align: left;
-    margin: 40px 0;
-}
-
-.skills h2 {
-    left: 200px;
-}
-
-.skills .logos {
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-}
-
-.skills .logos div {
-    width: calc(100px/5);
+.datos-contacto {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
-    height: 100px;
-    margin: 10px;
+    max-width: 500px;
     border: 1px solid transparent; /* Establecer un borde inicial transparente */
     border-radius: 10px; /* Bordes redondeados opcionales */
-    background-image: linear-gradient(#204060, #204060), linear-gradient(to right, #89D99D,#3B8C6E,#38886C,  #204060); /* Degradado y color de fondo */
+    background-image: linear-gradient(#204060, #204060), linear-gradient(to top, #89D99D,#3B8C6E,#38886C,  #204060); /* Degradado y color de fondo */
     background-origin: border-box; /* El degradado se origina en el borde */
     background-clip: content-box, border-box; /* Clip del degradado al borde */
-
+    margin: 0 auto;
+    flex-direction: column;
 }
 
-.skills .logos img {
-    object-fit: contain;
+.datos-contacto div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 20px;
 }
-    
+
+.datos-contacto div p {
+    margin-left: 10px;
+}
+
+.datos-contacto div h2 img {
+    max-width: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -3px;
+}
+
+.datos-contacto div a {
+    text-decoration: none;
+    color: white;
+}
+
+.datos-contacto div a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 
 footer {
     background-color: #203040;
@@ -188,32 +209,8 @@ footer .social-icons img {
         flex: 1 1 50%; /* Hacer que cada elemento ocupe el 50% del ancho */
     }
 
-    .intro {
-        margin: 10px 0;
-        flex-direction: column-reverse;
-    }
-
-    .intro .text {
-        text-align: center;
-    }
-
-    .intro .image img {
-        max-width: 150px; /* Ajustar el tamaño de la imagen */
-        margin-top: 10px;
-    }
-
-    .skills {
-        margin: 20px 10px; /* Ajustar el margen en pantallas pequeñas */
-    }
-
-    .skills .logos {
-        flex-direction: column; /* Cambiar la dirección a columna */
-        align-items: center;
-    }
-
-    .skills .logos div {
-        width: 100%;
-        margin: 10px 0; /* Espaciado vertical entre logos */
+    .contact input, .contact textarea{
+        max-width: 350px;
     }
 
     footer {

@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     background-color: #204060;
     color: white;
     display: flex;
@@ -51,12 +51,12 @@ nav ul li a {
     transition-duration: 100ms;
 }
 
-.actual{
+.actual {
     color: white;
     opacity: 1;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: white;
     opacity: 1;
     scale: 1.1;
@@ -68,79 +68,43 @@ main {
     flex: 1;
 }
 
-.intro {
+.about-me {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
 }
 
-.intro .text {
-    text-align: left;
-    max-width: 500px;
+.img-text {
+    display: flex;
+}
+
+.about-me .image {
+    max-width: 400px;
     margin-right: 20px;
 }
 
-.intro .image img {
-    border-radius: 50%;
-    max-width: 300px;
+.about-me .image img {
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-button {
-    background-color: #28a745;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition-duration: 100ms;
-}
-
-button:hover {
-    background-color: #218838;
-    scale: 1.1;
-    box-shadow: 0 0 10px #218838;
-}
-
-.skills {
+.about-me .text {
+    max-width: 600px;
     text-align: left;
-    margin: 40px 0;
 }
 
-.skills h2 {
-    left: 200px;
+.about-me h1 {
+    background-color: #fff;
+    color: #204060;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 24px;
 }
-
-.skills .logos {
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-}
-
-.skills .logos div {
-    width: calc(100px/5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    height: 100px;
-    margin: 10px;
-    border: 1px solid transparent; /* Establecer un borde inicial transparente */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    background-image: linear-gradient(#204060, #204060), linear-gradient(to right, #89D99D,#3B8C6E,#38886C,  #204060); /* Degradado y color de fondo */
-    background-origin: border-box; /* El degradado se origina en el borde */
-    background-clip: content-box, border-box; /* Clip del degradado al borde */
-
-}
-
-.skills .logos img {
-    object-fit: contain;
-}
-    
 
 footer {
     background-color: #203040;
@@ -166,6 +130,8 @@ footer .social-icons {
 footer .social-icons a {
     color: white;
     margin: 0 10px;
+    font-size: 24px; /* Ajustar el tamaño del icono */
+    text-decoration: none; /* Eliminar el subrayado */
 }
 
 footer .social-icons img {
@@ -180,6 +146,7 @@ footer .social-icons img {
     nav {
         margin: 0 10px; /* Reducir el margen en pantallas pequeñas */
     }
+
     nav ul {
         flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
     }
@@ -188,32 +155,22 @@ footer .social-icons img {
         flex: 1 1 50%; /* Hacer que cada elemento ocupe el 50% del ancho */
     }
 
-    .intro {
-        margin: 10px 0;
-        flex-direction: column-reverse;
-    }
-
-    .intro .text {
+    .about-me {
+        flex-direction: column;
         text-align: center;
     }
 
-    .intro .image img {
-        max-width: 150px; /* Ajustar el tamaño de la imagen */
-        margin-top: 10px;
+    .about-me .image {
+        margin-right: 0;
+        margin-bottom: 20px; /* Añadir espacio entre la imagen y el texto */
     }
 
-    .skills {
-        margin: 20px 10px; /* Ajustar el margen en pantallas pequeñas */
+    .about-me .text {
+        text-align: center;
     }
 
-    .skills .logos {
-        flex-direction: column; /* Cambiar la dirección a columna */
-        align-items: center;
-    }
-
-    .skills .logos div {
-        width: 100%;
-        margin: 10px 0; /* Espaciado vertical entre logos */
+    .img-text{
+        flex-direction: column;
     }
 
     footer {
