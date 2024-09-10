@@ -16,9 +16,9 @@ header {
 
 nav {
     background-color: #203040;
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 10px 0;
-    margin: 0 20px; /* Espacio de 20px a cada lado */
+    border-radius: 15px; 
+    padding: 20px 0;
+    margin: 0 0px; 
 }
 
 nav ul {
@@ -191,6 +191,61 @@ footer .social-icons img {
     max-width: 24px;
 }
 
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked ~ nav ul {
+    display: flex;
+}
+
+/* Menu hamburguesa */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        color: white;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #203040;
+        position: absolute;
+        top: 60px;
+        padding: 0;
+        width: 90%;
+        border-radius: 15px;
+        z-index: 2;
+    }
+
+    nav ul li a {
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav ul li a:hover{
+        color: white;
+        opacity: 1;
+        scale: 1.1;
+    }
+
+    #menu:checked + nav ul {
+        display: flex;
+    }
+
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
     .projects {
@@ -216,12 +271,13 @@ footer .social-icons img {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
     header {
         padding: 10px 10px; /* Reducir el padding en pantallas pequeñas */
     }
 
     nav {
+        background-color: #204060;
         margin: 0 10px;
     }
 
@@ -231,6 +287,12 @@ footer .social-icons img {
 
     nav ul li {
         flex: 1 1 50%; /* Hacer que cada elemento ocupe el 50% del ancho */
+    }
+
+    .projects{
+        flex-direction: column;
+        justify-content: center; /* Centrar los proyectos horizontalmente */
+        align-items: center;
     }
 
     .project {
