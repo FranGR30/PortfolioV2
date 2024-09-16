@@ -1,4 +1,3 @@
-/* estilos generales */
 html, body {
     height: 100%;
     margin: 0;
@@ -11,7 +10,7 @@ html, body {
 }
 
 header {
-    padding: 10px 20px; /* Espacio de 20px a cada lado */
+    padding: 10px 20px;
 }
 
 nav {
@@ -30,13 +29,13 @@ nav ul {
 }
 
 nav ul li {
-    flex: 1; /* Cada ítem ocupará un espacio igual */
-    text-align: center; /* Centrar el texto dentro de cada ítem */
+    flex: 1; 
+    text-align: center;
 }
 
 nav ul li a {
-    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
-    padding: 10px 0; /* Añadir padding para un mejor área clicable */
+    display: block;
+    padding: 10px 0;
     color: lightgray;
     opacity: 0.6;
     text-decoration: none;
@@ -153,12 +152,9 @@ main {
 }
 
 .tech-icons img {
-    object-fit: contain;
-}
-
-.tech-icons img {
     width: 30px;
     height: 30px;
+    object-fit: contain;
 }
 
 footer {
@@ -273,7 +269,7 @@ footer .social-icons img {
 
 @media (max-width: 768px) {
     header {
-        padding: 10px 10px; /* Reducir el padding en pantallas pequeñas */
+        padding: 10px 10px; 
     }
 
     nav {
@@ -282,40 +278,40 @@ footer .social-icons img {
     }
 
     nav ul {
-        flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+        flex-wrap: wrap;
     }
 
     nav ul li {
-        flex: 1 1 50%; /* Hacer que cada elemento ocupe el 50% del ancho */
+        flex: 1 1 50%; 
     }
 
     .projects{
         flex-direction: column;
-        justify-content: center; /* Centrar los proyectos horizontalmente */
+        justify-content: center;
         align-items: center;
     }
 
     .project {
-        width: 100%; /* Ocupa todo el ancho disponible */
-        margin: 10px 0; /* Espacio vertical entre proyectos */
+        width: 100%; 
+        margin: 10px 0;
     }
 
     .project img {
-        height: auto; /* Ajustar la altura automáticamente */
+        height: auto;
     }
 
     .project-details {
-        padding: 10px; /* Reducir el padding interno */
+        padding: 10px;
     }
 
     .tech-icons {
-        justify-content: center; /* Centrar los íconos en pantallas pequeñas */
-        position: static; /* Eliminar la posición absoluta */
-        margin: 10px 0 0; /* Espacio encima de los íconos */
+        justify-content: center; 
+        position: static; 
+        margin: 10px 0 0; 
     }
 
     .tech-icons img {
-        width: 24px; /* Ajustar el tamaño de los íconos */
+        width: 24px; 
         height: 24px;
     }
 

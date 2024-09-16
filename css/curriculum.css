@@ -1,4 +1,3 @@
-/* estilos generales */
 html, body {
     height: 100%;
     margin: 0;
@@ -11,7 +10,7 @@ html, body {
 }
 
 header {
-    padding: 10px 20px; /* Espacio de 20px a cada lado */
+    padding: 10px 20px;
 }
 
 nav {
@@ -31,13 +30,13 @@ nav ul {
 }
 
 nav ul li {
-    flex: 1; /* Cada ítem ocupará un espacio igual */
-    text-align: center; /* Centrar el texto dentro de cada ítem */
+    flex: 1; 
+    text-align: center;
 }
 
 nav ul li a {
-    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
-    padding: 10px 0; /* Añadir padding para un mejor área clicable */
+    display: block;
+    padding: 10px 0; 
     color: lightgray;
     opacity: 0.6;
     text-decoration: none;
@@ -87,9 +86,9 @@ main {
     font-size: 1.5em;
     color: #204060;
     background-color: lightgray;
-    padding: 10px 20px; /* Añadir padding para dar espacio interno */
+    padding: 10px 20px;
     border-radius: 15px;
-    margin: 0 20px; /* Añadir margen para separar del borde del contenedor */
+    margin: 0 20px; 
 }
 
 .section h2 .icon {
@@ -105,14 +104,14 @@ main {
 
 .experience, .education, .courses {
     display: flex;
-    flex-direction: column; /* Coloca los elementos en una columna para que queden uno debajo del otro */
-    align-items: center; /* Centrar los elementos horizontalmente, opcional */
-    gap: 20px; /* Espacio entre elementos, opcional */
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
 }
 
 .job, .school, .course, .certification {
-    border: 1px solid transparent; /* Asegúrate de que el borde inicial sea transparente */
-    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid transparent;
+    border-radius: 10px;
     width: calc(50% - 0px);
     display: flex;
     flex-direction: row;
@@ -125,7 +124,7 @@ main {
 }
 
 .job, .school, .course{
-    align-items: flex-start; /* Alinea todos los hijos arriba verticalmente */
+    align-items: flex-start;
 }
 
 .job img {
@@ -140,7 +139,7 @@ main {
     justify-content: flex-end;
     align-items: flex-start;
     flex-grow: 1;
-    padding: 10px; /* Añadir espacio interno */
+    padding: 10px;
     text-align: right;
 }
 
@@ -303,21 +302,21 @@ footer .social-icons img {
 
 @media (max-width: 768px) {
     header {
-        padding: 10px 10px; /* Reducir el padding en pantallas pequeñas */
+        padding: 10px 10px;
     }
 
     nav {
         z-index: 10;
         background-color: #204060;
-        margin: 0 10px; /* Reducir el margen en pantallas pequeñas */
+        margin: 0 10px;
     }
 
     nav ul {
-        flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+        flex-wrap: wrap;
     }
 
     nav ul li {
-        flex: 1 1 50%; /* Hacer que cada elemento ocupe el 50% del ancho */
+        flex: 1 1 50%;
     }
 
     .curriculum h1 {
@@ -326,7 +325,7 @@ footer .social-icons img {
 
     .section h2 {
         font-size: 1.2em;
-        margin: 0 10px; /* Ajustar el margen en pantallas pequeñas */
+        margin: 0 10px;
     }
 
     .job, .school, .course, .certification {

@@ -1,4 +1,3 @@
-/* estilos generales */
 html, body {
     height: 100%;
     margin: 0;
@@ -42,8 +41,8 @@ nav ul li {
 }
 
 nav ul li a {
-    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
-    padding: 10px 0; /* Añadir padding para un mejor área clicable */
+    display: block; 
+    padding: 10px 0; 
     color: lightgray;
     opacity: 0.6;
     text-decoration: none;
@@ -129,11 +128,11 @@ button:hover {
     flex: 1;
     height: 100px;
     margin: 10px;
-    border: 1px solid transparent; /* Establecer un borde inicial transparente */
-    border-radius: 10px; /* Bordes redondeados opcionales */
+    border: 1px solid transparent;
+    border-radius: 10px; 
     background-image: linear-gradient(#204060, #204060), linear-gradient(to right, #89D99D,#3B8C6E,#38886C,  #204060); /* Degradado y color de fondo */
-    background-origin: border-box; /* El degradado se origina en el borde */
-    background-clip: content-box, border-box; /* Clip del degradado al borde */
+    background-origin: border-box; 
+    background-clip: content-box, border-box;
 
 }
 
@@ -231,16 +230,16 @@ footer .social-icons img {
     
 
     header {
-        padding: 10px 10px; /* Reducir el padding en pantallas pequeñas */
+        padding: 10px 10px;
     }
 
     nav {
         background-color: #204060;
-        margin: 0 10px; /* Reducir el margen en pantallas pequeñas */
+        margin: 0 10px; 
     }
 
     nav ul li {
-        flex: 1 1 50%; /* Hacer que cada elemento ocupe el 50% del ancho */
+        flex: 1 1 50%;
     }
 
     .intro {
@@ -253,22 +252,22 @@ footer .social-icons img {
     }
 
     .intro .image img {
-        max-width: 150px; /* Ajustar el tamaño de la imagen */
+        max-width: 150px;
         margin-top: 10px;
     }
 
     .skills {
-        margin: 20px 10px; /* Ajustar el margen en pantallas pequeñas */
+        margin: 20px 10px; 
     }
 
     .skills .logos {
-        flex-direction: column; /* Cambiar la dirección a columna */
+        flex-direction: column; 
         align-items: center;
     }
 
     .skills .logos div {
         width: 100%;
-        margin: 10px 0; /* Espaciado vertical entre logos */
+        margin: 10px 0; 
     }
 
     footer {
