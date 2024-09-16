@@ -136,7 +136,7 @@ main {
 }
 
 .jobDuration, .education-duration, .course-duration {
-    font-size: x-small;
+    font-size: small;
     justify-content: flex-end;
     align-items: flex-start;
     flex-grow: 1;
@@ -144,15 +144,6 @@ main {
     text-align: right;
 }
 
-.jobDuration {
-    font-size: x-small;
-    display: flex;
-    justify-content: flex-end; /* Alinea a la derecha horizontalmente */
-    align-items: flex-start;   /* Alinea arriba verticalmente */
-    flex-grow: 1; /* Permite que este div crezca y ocupe espacio sobrante */
-    text-align: right; /* Para el contenido interno, por si es necesario */
-    max-width: 100px; /* Opcional, establece un ancho máximo si quieres limitar el crecimiento */
-}
 
 .certification {
     flex-direction: column;
